@@ -16,6 +16,7 @@ helper: ["Carrie Brown", "Adam Caprez", "Natasha Pavlovikj", "Jingchao Zhang"]  
 contact: ["hcc-support@unl.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad: http://pad.software-carpentry.org/2017_03_27_UNL            # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+registration: https://marketplace.unl.edu/hcc/hcc-software-carpentry-workshop-mar-27th-28th.html
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -181,6 +182,15 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   {% endif %}
   for more information.
 </p>
+
+<hr/>
+
+{% if page.registration %}
+<h2>Registration</h2>
+<p>
+Space is limited for the event. To register,  please <a href="{{page.registration}}"> visit here </a>.
+</p>
+{% endif %}
 
 <hr/>
 
