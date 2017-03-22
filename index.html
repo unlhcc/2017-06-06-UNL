@@ -12,9 +12,9 @@ humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g.,
 startdate: 2017-03-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-03-28        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Emelie Harstad", "Derek Weitzel"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Carrie Brown", "Adam Caprez", "Natasha Pavlovikj", "Jingchao Zhang"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Carrie Brown", "Adam Caprez", "Natasha Pavlovikj", "David Swanson", "Jingchao Zhang"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["hcc-support@unl.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-etherpad: http://pad.software-carpentry.org/2017_03_27_UNL            # optional: URL for the workshop Etherpad if there is one
+etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 registration: https://marketplace.unl.edu/hcc/hcc-software-carpentry-workshop-mar-27th-28th.html
 ---
@@ -250,9 +250,9 @@ Space is limited for the event. To register,  please <a href="{{page.registratio
 -->
 {% if page.etherpad %}
 <p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>Attendee Portal:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  This Portal contains interfaces to the Etherpad that we will use for chatting, taking notes, and sharing URLs and bits of code. Additionally, there is a log of the Instructors entered shell commands for the first day lessons.
 </p>
 {% endif %}
 
